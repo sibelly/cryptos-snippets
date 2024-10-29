@@ -1,11 +1,11 @@
 // Required imports
 const { ApiPromise, WsProvider } = require('@polkadot/api');
 
-const ADDR1 = '4bVjYgXohHw8CKpDetpZUzptge9x3hmoPAu7u7qA8XvN4KV5';
+const ADDR1 = '';
 
 async function main () {
   // Initialise the provider to connect to the local node
-  const provider = new WsProvider('wss://centrifuge-parachain.api.onfinality.io/ws?apikey=2995be06-71cc-43c5-a0be-8b533fbdb2a2');
+  const provider = new WsProvider('');
 
   // Create the API and wait until ready
   const api = await ApiPromise.create({ provider });

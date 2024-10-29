@@ -22,11 +22,9 @@ func main() {
 
 func SendData() error {
 	//kos private key
-	memo := "permit best kiwi blast purchase cook grab present have hurdle quarter steak"
-	//4gREq5k1kARZczCBAra2ksCZ2pzLGuUr6QqwZeFRE2MGt5Dm
-	//4h3ZUKJ3aqXwBMABSdDiLDWKNzQJKU7gMeHzppZ9MVQy7ghv
+	memo := ""
 
-	api, err := gsrpc.NewSubstrateAPI("wss://centrifuge-parachain.api.onfinality.io/ws?apikey=2995be06-71cc-43c5-a0be-8b533fbdb2a2")
+	api, err := gsrpc.NewSubstrateAPI("")
 	if err != nil {
 		return err
 	}
@@ -44,7 +42,7 @@ func SendData() error {
 
 	amount := types.NewUCompactFromUInt(1)
 
-	bob, err := types.NewMultiAddressFromHexAccountID("fc4dc1b8c900ddbe3f276f7f66cb0399c1441e521fd585d03a109be528e86739")
+	bob, err := types.NewMultiAddressFromHexAccountID("")
 	if err != nil {
 		return err
 	}

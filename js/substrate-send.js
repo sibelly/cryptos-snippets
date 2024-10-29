@@ -2,11 +2,11 @@
 const { ApiPromise, WsProvider } = require('@polkadot/api');
 const { Keyring } = require('@polkadot/keyring');
 
-const ADDR1 = '4gREq5k1kARZczCBAra2ksCZ2pzLGuUr6QqwZeFRE2MGt5Dm';
-const ADDR2 = '4h3ZUKJ3aqXwBMABSdDiLDWKNzQJKU7gMeHzppZ9MVQy7ghv';
+const ADDR1 = '';
+const ADDR2 = '';
 
 async function main () {
-  const provider = new WsProvider('wss://centrifuge-parachain.api.onfinality.io/ws?apikey=2995be06-71cc-43c5-a0be-8b533fbdb2a2');
+  const provider = new WsProvider('');
 
   // Instantiate the API
   const api = await ApiPromise.create({provider});
@@ -15,7 +15,7 @@ async function main () {
   const keyring = new Keyring({ type: 'sr25519' });
 
   // Add ADDR1 to our keyring with a hard-derivation path 
-  const ADDR1 = keyring.addFromUri('permit best kiwi blast purchase cook grab present have hurdle quarter steak');
+  const ADDR1 = keyring.addFromUri('');
 
   // // Create a extrinsic, transferring 12345 units to ADDR2
   // const transfer = api.tx.balances.transferAllowDeath(ADDR2, 1);
